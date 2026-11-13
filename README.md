@@ -17,6 +17,15 @@ A glassmorphism-based real-time chat application built using **React + Vite**, w
 - **Local Mode Support:** Works without the Socket.io server by automatically falling back to local mode.
 
 
+## Tech Stack
+
+- **Frontend:** React.js, Vite
+- **Backend:** Node.js, Express.js
+- **Real-Time Communication:** Socket.io
+- **Styling:** CSS (Glassmorphism)
+- **Deployment:** Netlify (Frontend)
+
+
 ## Installation & Setup
 
 ### 1. Clone the Repository
