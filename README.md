@@ -1,24 +1,70 @@
 # React Chat App
 
-A glassmorphism chat app built with React + Vite, with a Socket.io server (Express).
+A glassmorphism-based real-time chat application built using **React + Vite**, with a **Socket.io server powered by Express.js**.
+
+**Live Demo:** https://react-chat-app-exactspace-assignment.netlify.app/
 
 ## Features
-- Type a message and press **Send** (or Enter); it appears in the thread above the input
-- Each message gets a random username from `["Alan", "Bob", "Carol", "Dean", "Elin"]`
-- Like button on every message with a live count
-- Emoji picker with search and skin-tone options
-- `@` mentions (arrow keys / Enter / click) and a Socket.io server for real-time sync across tabs
-- Light / dark mode, animations, responsive layout
-- Works without the server too (falls back to local mode)
 
-## Run
+- **Real-Time Messaging:** Type a message and press **Send** or Enter to display it in the chat thread.
+- **Random Usernames:** Each message is assigned a random username from `["Alan", "Bob", "Carol", "Dean", "Elin"]`.
+- **Like Messages:** Like button on every message with a live like count.
+- **Emoji Picker:** Emoji selection with search functionality and skin-tone options.
+- **@ Mentions:** Mention users using `@` with keyboard navigation (arrow keys and Enter) or mouse clicks.
+- **Real-Time Synchronization:** Socket.io enables instant message synchronization across multiple browser tabs.
+- **Light & Dark Mode:** Switch between light and dark themes.
+- **Responsive Design:** Optimized for different screen sizes with smooth animations.
+- **Local Mode Support:** Works without the Socket.io server by automatically falling back to local mode.
+
+
+## Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone <your-repository-url>
+cd <project-folder>
+```
+
+### 2. Install Dependencies
+
 ```bash
 npm install
-npm run start:all   # server (port 4000) + client
 ```
-Or separately: `npm run server` and `npm run dev`.
 
-- Frontend: http://localhost:5173
-- Backend: http://localhost:4000
+### 3. Start the Application
 
-Open two browser tabs to see real-time sync. Set `VITE_SOCKET_URL` to point at a deployed server.
+Run both the frontend and backend simultaneously:
+
+```bash
+npm run start:all
+```
+
+Alternatively, start them separately:
+
+**Backend:**
+```bash
+npm run server
+```
+
+**Frontend:**
+```bash
+npm run dev
+```
+
+## Local URLs
+
+- **Frontend:** http://localhost:5173
+- **Backend:** http://localhost:4000
+
+## Testing Real-Time Communication
+
+1. Start the application using `npm run start:all`.
+2. Open the application in two separate browser tabs.
+3. Send a message from one tab.
+4. Verify that the message appears instantly in the other tab.
+
+**Note:** Set the `VITE_SOCKET_URL` environment variable to connect the frontend to a deployed Socket.io server.
+
+---
+
